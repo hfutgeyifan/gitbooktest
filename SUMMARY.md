@@ -1,7 +1,7 @@
 # Table of contents
 
 * [readme](README.md)
-* [flutter](flutter/README.md)
+* [平台选择：flutter](flutter/README.md)
   * [unity](https://www.baidu.com)
 
 ## API
