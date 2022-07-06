@@ -6,7 +6,9 @@
 
 ## API
 
-* [服务端](api/fu-wu-duan.md)
+* [服务端](api/fu-wu-duan/README.md)
+  * [初始化登录接口](api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/README.md)
+    * [initSDK](api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/initsdk.md)
 * [客户端](api/ke-hu-duan.md)
 
 ## class
