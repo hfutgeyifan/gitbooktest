@@ -16,4 +16,3 @@
 ## class
 
 * [V2TimSDKListener](class/v2timsdklistener.md)
-* [testClass](class/testclass.md)
