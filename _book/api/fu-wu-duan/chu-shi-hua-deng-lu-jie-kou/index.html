@@ -1,0 +1,443 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>初始化登录接口 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="初始化并成功登录，是正常使用腾讯云 IM 服务的前提。">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="initsdk.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    readme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../flutter/">
+            
+                <a href="../../../flutter/">
+            
+                    
+                    平台选择：flutter
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <a target="_blank" href="https://www.baidu.com">
+            
+                    
+                    unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">API</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    初始化登录接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="initsdk.html">
+            
+                <a href="initsdk.html">
+            
+                    
+                    initSDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="uninitsdk.html">
+            
+                <a href="uninitsdk.html">
+            
+                    
+                    uninitSDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../xin-ling-jie-kou.html">
+            
+                <a href="../xin-ling-jie-kou.html">
+            
+                    
+                    信令接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../ke-hu-duan.html">
+            
+                <a href="../../ke-hu-duan.html">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">class</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../../class/v2timsdklistener.html">
+            
+                <a href="../../../class/v2timsdklistener.html">
+            
+                    
+                    V2TimSDKListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >初始化登录接口</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x521D;&#x59CB;&#x5316;&#x767B;&#x5F55;&#x63A5;&#x53E3;">&#x521D;&#x59CB;&#x5316;&#x767B;&#x5F55;&#x63A5;&#x53E3;</h1>
+<p>API&#x76EE;&#x5F55;</p>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="initsdk.html">init</a></td>
+<td>&#x521D;&#x59CB;&#x5316; SDK</td>
+</tr>
+<tr>
+<td>unInitSDK</td>
+<td>&#x53CD;&#x521D;&#x59CB;&#x5316; SDK</td>
+</tr>
+<tr>
+<td>login</td>
+<td>&#x767B;&#x5F55;</td>
+</tr>
+<tr>
+<td>logout</td>
+<td>&#x767B;&#x51FA;</td>
+</tr>
+<tr>
+<td>getLoginUser</td>
+<td>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x767B;&#x5F55;&#x7528;&#x6237;&#x7684; UserID</td>
+</tr>
+<tr>
+<td>getLoginStatus</td>
+<td>&#x83B7;&#x53D6;&#x767B;&#x5F55;&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td>getServerTime</td>
+<td>&#x83B7;&#x53D6;&#x670D;&#x52A1;&#x5668;&#x5F53;&#x524D;&#x65F6;&#x95F4;(web&#x4E0D;&#x652F;&#x6301;)</td>
+</tr>
+<tr>
+<td>getVersion</td>
+<td>&#x83B7;&#x53D6;&#x7248;&#x672C;&#x53F7;</td>
+</tr>
+</tbody>
+</table>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 服务端">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="initsdk.html" class="navigation navigation-next " aria-label="Next page: initSDK">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"初始化并成功登录，是正常使用腾讯云 IM 服务的前提。","title":"初始化登录接口","level":"2.1.1","depth":2,"next":{"title":"initSDK","level":"2.1.1.1","depth":3,"path":"api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/initsdk.md","ref":"api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/initsdk.md","articles":[]},"previous":{"title":"服务端","level":"2.1","depth":1,"path":"api/fu-wu-duan/README.md","ref":"api/fu-wu-duan/README.md","articles":[{"title":"初始化登录接口","level":"2.1.1","depth":2,"path":"api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/README.md","ref":"api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/README.md","articles":[{"title":"initSDK","level":"2.1.1.1","depth":3,"path":"api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/initsdk.md","ref":"api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/initsdk.md","articles":[]},{"title":"uninitSDK","level":"2.1.1.2","depth":3,"path":"api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/uninitsdk.md","ref":"api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/uninitsdk.md","articles":[]}]},{"title":"信令接口","level":"2.1.2","depth":2,"path":"api/fu-wu-duan/xin-ling-jie-kou.md","ref":"api/fu-wu-duan/xin-ling-jie-kou.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","livereload"],"pluginsConfig":{"livereload":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/README.md","mtime":"2022-07-06T13:11:04.559Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-07T02:17:31.953Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
