@@ -30,13 +30,13 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 
 ## 返回参数详解
 
-| 名称          | 数值类型                                                                                                                                                                                         | 描述       |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| code        | int                                                                                                                                                                                          | 创建信息返回码  |
-| data        | [V2TimMsgCreateInfoResult](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/models\_v2\_tim\_msg\_create\_info\_result/V2TimMsgCreateInfoResult-class.html) | 创建信息返回结果 |
-| desc        | String                                                                                                                                                                                       |          |
-| hashCode    | int                                                                                                                                                                                          |          |
-| runtimeType | Type                                                                                                                                                                                         |          |
+| 名称          | 数值类型                                                             | 描述       |
+| ----------- | ---------------------------------------------------------------- | -------- |
+| code        | int                                                              | 创建信息返回码  |
+| data        | [V2TimMsgCreateInfoResult](../../../class/v2timsdklistener-1.md) | 创建信息返回结果 |
+| desc        | String                                                           |          |
+| hashCode    | int                                                              |          |
+| runtimeType | Type                                                             |          |
 
 ## 使用案例
 
