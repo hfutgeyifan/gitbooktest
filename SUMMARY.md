@@ -1,12 +1,11 @@
 # Table of contents
 
 * [readme](README.md)
-* [平台选择：flutter](flutter/README.md)
-  * [unity](https://www.baidu.com)
+* [平台选择：flutter](flutter.md)
 
 ## API
 
-* [服务端](api/fu-wu-duan/README.md)
+* [客户端](api/fu-wu-duan/README.md)
   * [初始化登录接口](api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/README.md)
     * [initSDK](api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/initsdk.md)
     * [uninitSDK](api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/uninitsdk.md)
@@ -26,7 +25,7 @@
   * [用户资料相关接口](api/fu-wu-duan/yong-hu-zi-liao-xiang-guan-jie-kou.md)
   * [离线推送相关接口](api/fu-wu-duan/li-xian-tui-song-xiang-guan-jie-kou.md)
   * [好友管理相关接口](api/fu-wu-duan/hao-you-guan-li-xiang-guan-jie-kou.md)
-* [客户端](api/ke-hu-duan.md)
+* [服务端](api/ke-hu-duan.md)
 
 ## class
 
