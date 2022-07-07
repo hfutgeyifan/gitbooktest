@@ -31,3 +31,4 @@
 ## class
 
 * [V2TimSDKListener](class/v2timsdklistener.md)
+* [V2TimMsgCreateInfoResult](class/v2timsdklistener-1.md)
