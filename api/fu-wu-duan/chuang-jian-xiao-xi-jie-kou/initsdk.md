@@ -17,49 +17,48 @@ Future<V2TimValueCallback<V2TimMsgCreateInfoResult>> createTextMessage(
 ## 返回模板
 
 ```dart
+V2TimValueCallback<V2TimMsgCreateInfoResult>
+
 {
-    status:true/false
+    code:int,
+    data:V2TimMsgCreateInfoResult,
+    desc:String,
+    hashCode:int,
+    runtimeType:Type
 }
 ```
 
 ## 返回参数详解
 
-| 名称     | 数值类型    | 描述      |
-| ------ | ------- | ------- |
-| status | boolean | 初始化结果状态 |
+| 名称          | 数值类型                                                                                                                                                                                         | 描述       |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| code        | int                                                                                                                                                                                          | 创建信息返回码  |
+| data        | [V2TimMsgCreateInfoResult](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/models\_v2\_tim\_msg\_create\_info\_result/V2TimMsgCreateInfoResult-class.html) | 创建信息返回结果 |
+| desc        | String                                                                                                                                                                                       |          |
+| hashCode    | int                                                                                                                                                                                          |          |
+| runtimeType | Type                                                                                                                                                                                         |          |
 
 ## 使用案例
 
 ```dart
-    final isInitSuccess = await _coreInstance.init(
-      // 此处可指定显示语言，不传该字段使用系统语言
-      // language: LanguageEnum.zh,
-      sdkAppID: IMDemoConfig.sdkappid,
-      loglevel: LogLevelEnum.V2TIM_LOG_DEBUG,
-      listener: V2TimSDKListener(
-        onConnectFailed: (code, error) {},
-        onConnectSuccess: () {
-          Utils.log(imt("即时通信服务连接成功"));
-        },
-        onConnecting: () {},
-        onKickedOffline: () {
-          onKickedOffline();
-        },
-        onSelfInfoUpdated: (info) {
-          print(imt("信息已变更"));
-          // onSelfInfoUpdated(info);
-        },
-        onUserSigExpired: () {
-          // userSig过期，相当于踢下线
-          onKickedOffline();
-        },
-      ),
-    );
-    if (isInitSuccess == null || !isInitSuccess) {
-      Utils.toast(imt("即时通信 SDK初始化失败"));
-    } 
+// 创建文本消息
+V2TimValueCallback<V2TimMsgCreateInfoResult> createTextMessageRes = await TencentImSDKPlugin.v2TIMManager.getMessageManager().createTextMessage(
+    text: "test",
+    atUserList: [],
+  );
+ if(createTextMessageRes.code == 0){
+    String id =  createTextAtMessageRes.data.id;
+
+       // 发送文本消息
+    V2TimValueCallback<V2TimMessage> sendMessageRes = await TencentImSDKPlugin.v2TIMManager.getMessageManager().sendMessage(id: id, receiver: "userID", groupID: "");
+    if(sendMessageRes.code == 0){
+      // 发送成功
+    }
+  }
 ```
 
 ## 相关平台接口：
 
-[IM SDK for unity](../chu-shi-hua-deng-lu-jie-kou/broken-reference/)
+IM SDK for unity
+
+IM SDK for Android
