@@ -142,6 +142,8 @@
     * [V2TimGroupMemberFullInfo](class/v2timgroupmemberinforesult-1/v2timgroupmemberfullinfo.md)
   * [V2TimGroupMessageReadMemberList](class/v2timgroupmessagereadmemberlist/README.md)
     * [V2TimGroupMemberInfo](class/v2timgroupmessagereadmemberlist/v2timgroupmemberinfo.md)
+* [User](class/user.md)
+* [Message](class/message.md)
 * [EnumUtils](class/enumutils.md)
 * [V2TimVideoElem](class/v2timvideoelem.md)
 * [V2TimUserInfo](class/v2timuserinfo.md)
