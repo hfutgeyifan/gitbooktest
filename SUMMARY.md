@@ -30,5 +30,15 @@
 
 ## class
 
+* [Manager](class/manager/README.md)
+  * [V2TIMConversationManager](class/manager/v2timconversationmanager.md)
+  * [V2TIMFriendshipManager](class/manager/v2timfriendshipmanager.md)
+  * [V2TIMGroupManager](class/manager/v2timgroupmanager.md)
+  * [V2TIMManager](class/manager/v2timmanager.md)
+  * [V2TIMMessageManager](class/manager/v2timmessagemanager.md)
+  * [V2TIMOfflinePushManager](class/manager/v2timofflinepushmanager.md)
+  * [V2TIMSignalingManager](class/manager/v2timsignalingmanager.md)
+* [Enums](class/enums.md)
+* [Page 2](class/page-2.md)
 * [V2TimSDKListener](class/v2timsdklistener.md)
 * [V2TimMsgCreateInfoResult](class/v2timsdklistener-1.md)
