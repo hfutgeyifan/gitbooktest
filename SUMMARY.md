@@ -66,7 +66,6 @@
   * [MessageStatus](class/enums/messagestatus.md)
   * [ReceiveMsgOptEnum](class/enums/receivemsgoptenum.md)
   * [SimpleMsgListenerType](class/enums/simplemsglistenertype.md)
-  * [AllowType](class/enums/allowtype-1.md)
   * [UserStatusType](class/enums/userstatustype.md)
   * [V2TIMKeywordListMatchType](class/enums/v2timkeywordlistmatchtype.md)
 * [callbacks](class/page-2.md)
