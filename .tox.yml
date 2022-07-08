@@ -1,0 +1,9 @@
+tox:
+  type: cloud
+  target: im/doc
+  dist: _book
+  wework:
+    ? chatid
+  product:
+    name: 即时通信IM
+    id: CAT010102

@@ -1,0 +1,37 @@
+{
+  "name": "flutterapitest1",
+  "version": "1.0.0",
+  "description": "111",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-chapter-fold": "^0.0.4",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-code": "^0.1.0",
+    "gitbook-plugin-pageview-count": "^1.0.1",
+    "gitbook-plugin-theme-bookstyle": "^1.0.3",
+    "gitbook-plugin-popup": "^0.0.1",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-theme-fexa": "^1.0.6",
+    "gitbook-plugin-theme-het-ycy": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tox:build@dev": "pwd",
+    "tox:publish@dev": "tox publish test --silence",
+    "tox:publish@master": "tox publish online --silence",
+    "tox:build@master": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfutgeyifan/gitbooktest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hfutgeyifan/gitbooktest/issues"
+  },
+  "homepage": "https://github.com/hfutgeyifan/gitbooktest#readme"
+}
