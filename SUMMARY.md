@@ -25,7 +25,10 @@
 * [用户资料相关接口](api/yong-hu-zi-liao-xiang-guan-jie-kou.md)
 * [离线推送相关接口](api/li-xian-tui-song-xiang-guan-jie-kou.md)
 * [好友管理相关接口](api/hao-you-guan-li-xiang-guan-jie-kou.md)
-* [服务端](api/fu-wu-duan.md)
+* [服务端](api/fu-wu-duan/README.md)
+  * [生成 UserSig](api/fu-wu-duan/sheng-cheng-usersig.md)
+  * [REST API](api/fu-wu-duan/rest-api.md)
+  * [第三方回调](api/fu-wu-duan/di-san-fang-hui-tiao.md)
 
 ## class
 
